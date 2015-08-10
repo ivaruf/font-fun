@@ -3,9 +3,11 @@ function createIcon(data, size) {
   var g = document.createElementNS("http://www.w3.org/2000/svg", "g");
   var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
 
-  svg.setAttribute("style", "width:"+size+"px;height:"+size+"px;");
+  svg.setAttribute("width", size);
+  svg.setAttribute("height", size);
+  svg.setAttribute("viewBox", "0 0 " + size*2.5 + " " + size*2.5)
   path.setAttribute("d", data);
-  g.setAttribute("transform", "scale(0.0"+size+") translate(0, 1000) scale(1,-1)");
+  g.setAttribute("transform", "scale(0."+size+") translate(0, 2000) scale(1,-1)");
   g.appendChild(path);
   svg.appendChild(g);
   return svg;
