@@ -25,5 +25,6 @@ function skull() {
 }
 
 function appendIcon(icon) {
-  document.body.appendChild(icon);
+  var element = document.getElementById("appender");
+  element.appendChild(icon);
 }

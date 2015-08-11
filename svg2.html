@@ -1,0 +1,66 @@
+<html>
+<head>
+  <link rel="stylesheet" href="css/default.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/highlight.min.js"></script>
+  <script src="js/svg-example.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<div class="outer">
+<div class="inner">
+
+<h1 class="haymaker">JS generated</h1>
+
+<pre>
+<code class="javascript">
+
+  function createIcon(data, size) {
+    var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    var g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+    var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+
+    svg.setAttribute("width", size);
+    svg.setAttribute("height", size);
+    svg.setAttribute("viewBox", "0 0 " + size * 2.5 + " " + size * 2.5)
+    path.setAttribute("d", data);
+    g.setAttribute("transform", "scale(0."+size+") translate(0, 2048) scale(1,-1)");
+    g.appendChild(path);
+    svg.appendChild(g);
+    return svg;
+  }
+
+  function pencil() {
+    size = document.getElementById("iconSize").value;
+    return createIcon("M74 -37l330 507l1375 1047q236 -71 257 -333l-1379 -1047zM1534 1268q151 ..."
+    ,size);
+  }
+
+  function skull() {
+    size = document.getElementById("iconSize").value;
+    return createIcon("M800 805l-20 -51q-38 -13 -103 -13q-32 0 -58 3.5t-45 9.5l-20 51l-140 ..."
+    ,size);
+  }
+
+  function appendIcon(icon) {
+   document.body.appendChild(icon);
+  }
+  </code>
+</pre>
+
+
+<div>
+<div style="width:430px; margin:0 auto;">
+  <label>Size</label> <input type="number" id="iconSize" value="300">
+  <button onclick="appendIcon(pencil())">Legg til blyant</button>
+  <button onclick="appendIcon(skull())">Legg til hodeskalle</button>
+</div>
+<a class="back comic" href="svg1.html">&lt;&lt;&lt;Back </a>
+<a class="comic next" href="auto-tabloid.html">Next >>></a>
+</div>
+<div style="border:solid 0px black" id="appender"></div>
+
+</div>
+</div>
+</body>
+</html>

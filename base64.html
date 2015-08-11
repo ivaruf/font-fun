@@ -8,25 +8,27 @@
 <body>
     <div class="outer">
         <div class="inner">
-            <h1 class="haymaker">font -> base64</h1>
+            <h1 class="haymaker">base64 font</h1>
 
             <h2>Lag en base64 enkodet string av en font</h2>
-            <pre>
-                <code>
-                    cat Haymaker.ttf | base64 -w 0 > font64
-                </code>
-            </pre>
+<pre>
+    <code>
+    cat Haymaker.ttf | base64 -w 0 > font64
+    </code>
+</pre>
             <h2>Brukes rett i css</h2>
             <pre>
                 <code class="css">
-                    @font-face{
-                        font-family: hay;
-                        src: url(data:font/true-type;base64,AAEAAAASAQAABAAgR1BPU9il5uw...)format('truetype')
-                    }
+    @font-face{
+        font-family: hay;
+        src: url(data:font/true-type;base64,AAEAAAASAQAABAAgR1BPU9il5uw...)format('truetype')
+    }
                 </code>
             </pre>
-            (Look ma, no files!)
-            <a class="next comic">Next >>></a>
+            <p>(Look ma, no files!)</p>
+
+            <a class="back comic" href="index.html">&lt;&lt;&lt;Back </a>
+            <a class="next comic" href="svg1.html">Next >>></a>
         </div>
     </div>
 </body>

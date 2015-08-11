@@ -27,7 +27,7 @@ body {
 }
 
 .inner {
-    width:65%;
+    width:800px;
     margin:0px auto;
 }
 
@@ -39,4 +39,10 @@ a {
     font-size:45;
     color:black;
     float:right;
+}
+
+.back {
+    font-size:45;
+    color:black;
+    float:left;
 }
