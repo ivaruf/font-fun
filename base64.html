@@ -1,0 +1,33 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <h1 class="haymaker">font -> base64</h1>
+
+            <h2>Lag en base64 enkodet string av en font</h2>
+            <pre>
+                <code>
+                    cat Haymaker.ttf | base64 -w 0 > font64
+                </code>
+            </pre>
+            <h2>Brukes rett i css</h2>
+            <pre>
+                <code class="css">
+                    @font-face{
+                        font-family: hay;
+                        src: url(data:font/true-type;base64,AAEAAAASAQAABAAgR1BPU9il5uw...)format('truetype')
+                    }
+                </code>
+            </pre>
+            (Look ma, no files!)
+            <a class="next comic">Next >>></a>
+        </div>
+    </div>
+</body>
+</html>
