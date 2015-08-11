@@ -1,0 +1,42 @@
+@font-face {
+font-family: comic;
+src: url(../fonts/FromCartoonBlocks.ttf);
+}
+@font-face {
+font-family: haymaker;
+src: url(../fonts/Haymaker.ttf);
+}
+
+h1 {
+    font-size:90px;
+    margin:20px 0;
+}
+.comic {
+    font-family: comic;
+}
+.haymaker {
+    font-family: haymaker;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.outer {
+    width:100%;
+}
+
+.inner {
+    width:65%;
+    margin:0px auto;
+}
+
+a {
+    text-decoration:none;
+}
+
+.next {
+    font-size:45;
+    color:black;
+    float:right;
+}
